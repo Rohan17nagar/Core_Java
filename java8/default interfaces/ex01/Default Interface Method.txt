@@ -1,0 +1,14 @@
+Default method in interface:
+-------------------------------
+* Like regular interface methods, default methods are implicitly public; there's no need to specify the public modifier.
+* Unlike regular interface methods, we declare them with the default keyword at the beginning of the method signature, 
+  and they provide an implementation.
+
+  
+The reason why the Java 8 release included default methods:
+-------------------------------------------------------------
+* an interface has one or multiple implementations, if one or more methods are added to the interface, all the 
+  implementations will be forced to implement them too. Otherwise, the design will just break down. Default interface 
+  methods are an efficient way to deal with this issue.
+* They allow us to add new methods to an interface that are automatically available in the implementations.
+
